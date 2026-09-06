@@ -111,7 +111,15 @@ MAX_DIR_HISTORY = 10
 
 # Simplified tags without formatting variations
 TAXON_KEYS = ['taxonid', 'dwc:taxonid']
-OBSERVATION_KEYS = ['observationid', 'catalognumber', 'dwc:catalognumber', 'inaturalist.observation', 'observation', 'Xmp.iNaturalist.observation']
+OBSERVATION_KEYS = [
+    'observationid',
+    'catalognumber',
+    'dwc:catalognumber',
+    # 'inaturalist.observation',
+    # 'observation',
+    # 'Xmp.iNaturalist.observation',
+    'xmp.inaturalist.observation',
+]
 
 COMMON_NAME_IGNORE_TERMS = [',', ' and ', 'allies', 'relatives', 'typical']
 SELECTABLE_ICONIC_TAXA = {k: v for k, v in ICONIC_TAXA.items() if v not in ['Animalia', 'Unknown']}
